@@ -22,7 +22,7 @@ try {
 </table>
 <?php
 } catch (PDOException $e) {
-    echo "エラー!: " . str2html($e->getMessage());
+    echo "エラー!: ";
     exit;
 }
 ?>

@@ -46,7 +46,7 @@ try {
         echo 'ログインに失敗しました。(2)';
     }
 } catch (PDOException $e) {
-        echo "エラー!: " . str2html($e->getMessage());
+        echo "エラー!: ";
         exit;
 }
 
