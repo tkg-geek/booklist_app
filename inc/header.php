@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>デプロイのテスト</title>
+    <title>デプロイのテスト2</title>
 </head>
 <body>
 <header>
