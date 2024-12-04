@@ -2,7 +2,12 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 use Dotenv\Dotenv;
 
-$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$envFile = '.env.development';  // デフォルトは開発環境用
+if (getenv('APP_ENV') === 'production') {
+    $envFile = '.env.production';
+}
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../', $envFile);
 $dotenv->load();
 
 function str2html(string $string) :string {
